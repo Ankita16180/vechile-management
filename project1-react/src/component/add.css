@@ -1,0 +1,27 @@
+
+.formlist{
+   
+    margin-left: 5%;
+}
+.button1{
+    float: right;
+    gap: 50;
+}
+.button2{
+    float: right;
+    gap: 50;
+    margin-right: 2%;
+    right: 10px;
+}
+
+.Cardd{
+    width: 400px;
+    height: 300px;
+
+    display: grid;
+  grid-template-columns: 4fr;
+  border-color: black;
+
+    
+}
+

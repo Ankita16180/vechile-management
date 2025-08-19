@@ -1,0 +1,41 @@
+
+
+type Vehicle {
+  vehicleid: ID
+  registrationnumber: String
+  city: String
+  saledate: String
+  vehicletype: String
+  vehiclebrand: String
+  message: String
+  
+}
+
+
+input AddVehicleInput {
+  registrationnumber: String
+  city: String
+  saledate: String
+  vehicletype: String
+  vehiclebrand: String
+  message:String
+}
+
+input EditVehicleInput {
+  registrationnumber: String
+  city: String
+  saledate: String
+  vehicletype: String
+  vehiclebrand: String
+}
+
+type Query {
+  getVehicleDetail(vehicleid: ID!): Vehicle
+  getAllVehicleDetails: [Vehicle!]!
+}
+
+type Mutation {
+  addVehicle(input: AddVehicleInput!): Vehicle
+  editVehicle(vehicleId: ID!, input: EditVehicleInput!): Vehicle
+  deleteVehicle(vehicleId: ID!): Vehicle
+}
