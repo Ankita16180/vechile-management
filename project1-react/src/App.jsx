@@ -25,7 +25,7 @@ function App() {
 
   return (
     <div>
-      <h1>Vehicles...</h1>
+      <h1>Vehicles details...</h1>
       
       <BasicModal />
        <div style={{ display: "flex", flexWrap: "wrap", gap: "16px" }}>
